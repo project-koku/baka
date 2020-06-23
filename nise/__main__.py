@@ -33,7 +33,6 @@ from nise.yaml_gen import add_yaml_parser_args
 from nise.yaml_gen import yaml_main
 
 LOG = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO, format="%(asctime)s : %(name)s.%(lineno)d : %(levelname)s : %(message)s")
 
 
 class NiseError(Exception):
@@ -553,6 +552,7 @@ def run(provider_type, options):
 
 def main():
     """Run data generation program."""
+    logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(name)s:%(lineno)d - %(levelname)s - %(message)s")
     parser = create_parser()
     args = parser.parse_args()
     if not args.command:

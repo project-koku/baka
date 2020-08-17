@@ -716,11 +716,10 @@
         },
         "pipenv-setup": {
             "hashes": [
-                "sha256:18ce5474261bab22b9a3cd919d70909b578b57438d452ebb88dbe22ca70f2ef2",
-                "sha256:5b69f8a91dd922806577d4e0c84acda1ce274657aab800749f088b46fcfe76cb"
+                "sha256:8a439aff7b16e18d7e07702c9186fc5fe86156679eace90e10c2578a43bd7af1",
+                "sha256:e1bfd55c1152024e762f1c17f6189fcb073166509e7c0228870f7ea160355648"
             ],
-            "index": "pypi",
-            "version": "==3.0.1"
+            "version": "==3.1.1"
         },
         "pipfile": {
             "hashes": [

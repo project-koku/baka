@@ -43,8 +43,8 @@ generators:
       end_date: 2019-11-30
       meter_id: 55555555-4444-3333-2222-111111111124
       resource_location: "US North Central"
-      amount: 10
-      rate: 0.05
+      usage_quantity: 10
+      resource_rate: 0.05
       tags:
         storageclass: Thor
   - StorageGenerator:
@@ -52,8 +52,8 @@ generators:
       end_date: 2019-11-30
       meter_id: 55555555-4444-3333-2222-111111111123
       resource_location: "US North Central"
-      amount: 10
-      rate: 0.01
+      usage_quantity: 10
+      resource_rate: 0.01
       tags:
         storageclass: Baldur
   - StorageGenerator:
@@ -61,8 +61,8 @@ generators:
       end_date: 2019-11-30
       meter_id: 55555555-4444-3333-2222-111111111122
       resource_location: "US North Central"
-      amount: 10
-      rate: 0.01
+      usage_quantity: 10
+      resource_rate: 0.01
       tags:
         storageclass: Loki
   - StorageGenerator:
@@ -70,8 +70,8 @@ generators:
       end_date: 2019-11-30
       meter_id: 55555555-4444-3333-2222-111111111121
       resource_location: "US North Central"
-      amount: 10
-      rate: 0.01
+      usage_quantity: 10
+      resource_rate: 0.01
       tags:
         storageclass: Odin
   - StorageGenerator:
@@ -79,8 +79,8 @@ generators:
       end_date: 2019-11-30
       meter_id: 55555555-4444-3333-2222-111111111120
       resource_location: "US North Central"
-      amount: 10
-      rate: 0.01
+      usage_quantity: 10
+      resource_rate: 0.01
       tags:
         storageclass: Tyr
   - SQLGenerator:

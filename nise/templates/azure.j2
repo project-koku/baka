@@ -6,8 +6,8 @@ generators:
       instance_id: {{ item.instance_id|default("subscriptions/"+payer+"/resourceGroups/rg-"+faker("word")+"/providers/"+_service_name+"/sg-"+faker("word")) }}
       meter_id: {{ item.meter_id|default(faker("uuid4")) }}
       resource_location: {{ item.resource_location|default(faker("word")) }}
-      usage_quantity: {{ item.usage_quantity|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
-      resource_rate: {{ item.resource_rate|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
+      usage_quantity: {{ item.usage_quantity|default(faker("pyint", min_value=1, max_value=24)) }}
+      resource_rate: {{ item.resource_rate|default(0.001 + faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
       pre_tax_cost: {{ item.pre_tax_cost|default(None) }}
       tags: {% for tag in item.tags|default([{"key": "environment", "value": faker("random_element", elements=("dev", "ci", "qa", "stage", "prod"))},
                                              {"key": "project", "value": faker("random_element", elements=("p1", "p2", "p3"))}]) %}
@@ -19,8 +19,8 @@ generators:
       instance_id: {{ item.instance_id|default("subscriptions/"+payer+"/resourceGroups/rg-"+faker("word")+"/providers/"+_service_name+"/sg-"+faker("word")) }}
       meter_id: {{ item.meter_id|default(faker("uuid4")) }}
       resource_location: {{ item.resource_location|default(faker("word")) }}
-      usage_quantity: {{ item.usage_quantity|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
-      resource_rate: {{ item.resource_rate|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
+      usage_quantity: {{ item.usage_quantity|default(faker("pyint", min_value=1, max_value=24)) }}
+      resource_rate: {{ item.resource_rate|default(0.001 + faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
       pre_tax_cost: {{ item.pre_tax_cost|default(None) }}
       tags: {% for tag in item.tags|default([{"key": "environment", "value": faker("random_element", elements=("dev", "ci", "qa", "stage", "prod"))},
                                              {"key": "project", "value": faker("random_element", elements=("p1", "p2", "p3"))}]) %}
@@ -32,8 +32,8 @@ generators:
       instance_id: {{ item.instance_id|default("subscriptions/"+payer+"/resourceGroups/rg-"+faker("word")+"/providers/"+_service_name+"/sg-"+faker("word")) }}
       meter_id: {{ item.meter_id|default(faker("uuid4")) }}
       resource_location: {{ item.resource_location|default(faker("word")) }}
-      usage_quantity: {{ item.usage_quantity|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
-      resource_rate: {{ item.resource_rate|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
+      usage_quantity: {{ item.usage_quantity|default(faker("pyint", min_value=1, max_value=24)) }}
+      resource_rate: {{ item.resource_rate|default(0.001 + faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
       pre_tax_cost: {{ item.pre_tax_cost|default(None) }}
       tags: {% for tag in item.tags|default([{"key": "environment", "value": faker("random_element", elements=("dev", "ci", "qa", "stage", "prod"))},
                                              {"key": "project", "value": faker("random_element", elements=("p1", "p2", "p3"))}]) %}
@@ -45,8 +45,8 @@ generators:
       instance_id: {{ item.instance_id|default("subscriptions/"+payer+"/resourceGroups/rg-"+faker("word")+"/providers/"+_service_name+"/sg-"+faker("word")) }}
       meter_id: {{ item.meter_id|default(faker("uuid4")) }}
       resource_location: {{ item.resource_location|default(faker("word")) }}
-      usage_quantity: {{ item.usage_quantity|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
-      resource_rate: {{ item.resource_rate|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
+      usage_quantity: {{ item.usage_quantity|default(faker("pyint", min_value=1, max_value=24)) }}
+      resource_rate: {{ item.resource_rate|default(0.001 + faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
       pre_tax_cost: {{ item.pre_tax_cost|default(None) }}
       tags: {% for tag in item.tags|default([{"key": "environment", "value": faker("random_element", elements=("dev", "ci", "qa", "stage", "prod"))},
                                              {"key": "project", "value": faker("random_element", elements=("p1", "p2", "p3"))}]) %}
@@ -58,8 +58,8 @@ generators:
       instance_id: {{ item.instance_id|default("subscriptions/"+payer+"/resourceGroups/rg-"+faker("word")+"/providers/"+_service_name+"/sg-"+faker("word")) }}
       meter_id: {{ item.meter_id|default(faker("uuid4")) }}
       resource_location: {{ item.resource_location|default(faker("word")) }}
-      usage_quantity: {{ item.usage_quantity|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
-      resource_rate: {{ item.resource_rate|default(faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
+      usage_quantity: {{ item.usage_quantity|default(faker("pyint", min_value=1, max_value=24)) }}
+      resource_rate: {{ item.resource_rate|default(0.001 + faker("pyfloat", min_value=0, max_value=1, right_digits=5, positive=True)) }}
       pre_tax_cost: {{ item.pre_tax_cost|default(None) }}
       tags: {% for tag in item.tags|default([{"key": "environment", "value": faker("random_element", elements=("dev", "ci", "qa", "stage", "prod"))},
                                              {"key": "project", "value": faker("random_element", elements=("p1", "p2", "p3"))}]) %}
